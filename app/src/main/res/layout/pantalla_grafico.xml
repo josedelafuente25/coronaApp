@@ -14,14 +14,6 @@
         tools:layout_editor_absoluteX="307dp"
         tools:layout_editor_absoluteY="487dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="191dp" />
-
     <Button
         android:id="@+id/btn_grafico"
         android:layout_width="wrap_content"
@@ -29,4 +21,12 @@
         android:text="Cambiar tipo de Grafico"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="487dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="173dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
