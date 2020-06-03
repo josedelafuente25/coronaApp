@@ -6,10 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -23,9 +20,8 @@ public class Resumen_Activity extends AppCompatActivity {
 
         Date d=new Date();
 
-
         fechaCompleta = (TextView) findViewById(R.id.txt_fecha);
-        SimpleDateFormat fecc=new SimpleDateFormat("d, MMMM 'del'yyyy");
+        SimpleDateFormat fecc=new SimpleDateFormat("d MMMM 'del' yyyy");
         String fechacComplString = fecc.format(d);
         fechaCompleta.setText(fechacComplString);
 
