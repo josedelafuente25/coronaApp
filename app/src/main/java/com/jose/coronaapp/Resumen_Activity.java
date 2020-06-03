@@ -23,6 +23,7 @@ public class Resumen_Activity extends AppCompatActivity {
 
         Date d=new Date();
 
+
         fechaCompleta = (TextView) findViewById(R.id.txt_fecha);
         SimpleDateFormat fecc=new SimpleDateFormat("d, MMMM 'del'yyyy");
         String fechacComplString = fecc.format(d);
