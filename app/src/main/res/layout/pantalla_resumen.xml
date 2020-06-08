@@ -16,18 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_atras"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginBottom="56dp"
-        android:onClick="volver"
-        android:text="Atras"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
@@ -60,24 +48,26 @@
     </com.google.android.material.tabs.TabLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_grafico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
         android:layout_marginLeft="29dp"
         android:layout_marginBottom="56dp"
-        android:text="Gráfico"
+        android:onClick="cambiar_pantalla"
+        android:text="@string/btn_grafico"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button7" />
+        app:layout_constraintStart_toEndOf="@+id/btn_mapa" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_mapa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
         android:layout_marginBottom="56dp"
-        android:text="Mapa"
+        android:onClick="cambiar_pantalla"
+        android:text="@string/btn_mapa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -102,5 +92,17 @@
         android:text="RESUMEN PAÍS"
         app:layout_constraintBottom_toTopOf="@+id/tabLayout"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="cambiar_pantalla"
+        android:text="@string/btn_atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_grafico" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
