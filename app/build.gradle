@@ -26,6 +26,18 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            matchingFallbacks = ['release']
+        }
+        enterprise {
+            // blah blah
+            matchingFallbacks = ['release']
+        }
+        debug {
+            // blah blah
+            matchingFallbacks = ['debug']
+        }
+
         }
 
     }
@@ -41,7 +53,7 @@ android {
         implementation 'com.google.android.material:material:1.1.0'
     }
 
-}
+
 
 dependencies {
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
