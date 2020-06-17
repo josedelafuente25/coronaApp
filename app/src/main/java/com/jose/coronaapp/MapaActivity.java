@@ -43,6 +43,14 @@ public class MapaActivity extends AppCompatActivity {
         });
 
     }
+
+    public void retorno_map (View view) {
+
+        Intent pantalla_resumen = new Intent(this, Resumen_Activity.class);
+        startActivity(pantalla_resumen);
+
+    }
+
 }
 
 

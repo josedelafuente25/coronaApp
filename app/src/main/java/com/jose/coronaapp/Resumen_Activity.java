@@ -78,8 +78,8 @@ public class Resumen_Activity extends AppCompatActivity {
                 break;
 
             case R.id.btn_mapa:
-                Intent activity_mapa = new Intent(this, MapaActivity.class);
-                startActivity(activity_mapa);
+                Intent activity_maps1 = new Intent(this, MapsActivity.class);
+                startActivity(activity_maps1);
                 Toast.makeText(this, "Pantalla mapa", Toast.LENGTH_SHORT).show();
                 break;
         }
