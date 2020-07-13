@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -19,7 +20,6 @@ private Button btn_ingresar;
             setContentView(R.layout.pantalla_inicio);
             Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show();
         btn_ingresar =findViewById(R.id.btnIngresar);
-
 
         }
 

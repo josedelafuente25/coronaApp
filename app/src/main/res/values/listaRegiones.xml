@@ -2,22 +2,22 @@
 <resources>
 
     <string-array name="combo_regiones">
-        <item>Seleccione Región</item>
-        <item>Aisén</item>
         <item>Arica y Parinacota</item>
+        <item>Aysén</item>
         <item>Atacama</item>
-        <item>Biobío</item>
+        <item>Antofagasta</item>
+        <item>Bío-Bío</item>
         <item>Coquimbo</item>
-        <item>La Araucanía</item>
-        <item>Libertador General B.Ohiggins</item>
+        <item>Araucanía</item>
+        <item>O´higgins</item>
         <item>Los Lagos</item>
-        <item>Los Rios</item>
+        <item>Los Ríos</item>
         <item>Maule</item>
+        <item>Magallanes</item>
         <item>Metropolitana</item>
-        <item>Ñuble</item>
-        <item>Tarapacá</item>
-        <item>Valparaiso</item>
-
+        <item>Ñuble</item> ok
+        <item>Tarapacá</item> ok
+        <item>Valparaíso</item> ok
     </string-array>
 
 </resources>

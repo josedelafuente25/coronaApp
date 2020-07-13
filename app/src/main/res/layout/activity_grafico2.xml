@@ -5,41 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo3"
-    tools:context=".GraficoActivity1">
+    tools:context=".GraficoActivity2">
 
+    <TextView
+        android:id="@+id/tViewSelector2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tViewSelector"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
-    <lecho.lib.hellocharts.view.PieChartView
-        android:id="@+id/chart2"
-        android:layout_width="375dp"
-        android:layout_height="311dp"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginBottom="182dp"
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/graficaBarras"
+        android:layout_width="478dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="39dp"
         app:layout_constraintBottom_toTopOf="@+id/btnCambiarGrafico"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerRegiones"
-        app:layout_constraintVertical_bias="0.553" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegiones"></com.github.mikephil.charting.charts.BarChart>
 
     <Button
         android:id="@+id/btnCambiarGrafico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="168dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/bordes_redondos"
         android:onClick="cambiar_graf"
         android:text="@string/btnCambiarGrafico"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_graf_atras"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_graf_atras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
+        android:layout_marginStart="104dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/bordes_redondos"
         android:onClick="retorno_graf"
@@ -49,26 +59,13 @@
 
     <Spinner
         android:id="@+id/spinnerRegiones"
-        style='style="@android:style/Widget.Holo.Light.Spinner"'
         android:layout_width="389dp"
         android:layout_height="18dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="14dp"
-        android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tViewSelector"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tViewSelector"
-        android:textColor="#fff"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>

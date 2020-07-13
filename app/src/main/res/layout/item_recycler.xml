@@ -1,24 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true">
 
     <TextView
-        android:id="@+id/nombreItem"
-        android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="match_parent"
-        android:hint="asd"
-        android:gravity="center"
-        />
+        android:id="@+id/nombreRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="true"
+        android:text="Región"
+        android:textColor="#fff"
+        app:autoSizeTextType="none"
+        tools:text="r" />
 
     <TextView
-        android:layout_margin="20dp"
-        android:id="@+id/id"
-        android:layout_width="0dp"
-        android:layout_weight="0.3"
+        android:id="@+id/confirmados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="center"
+        android:text="Confirmados"
+        android:textColor="#fff"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/recuperados"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:drawableRight="@android:drawable/star_on" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Recuperados"
+        android:textColor="#fff"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/fallecidos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Fallecidos"
+        android:textColor="#fff"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/activos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Activos"
+        android:textColor="#fff"
+        app:autoSizeTextType="none" />
 
 </LinearLayout>
